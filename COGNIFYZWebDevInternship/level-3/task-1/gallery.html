@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Level 3 — Task 1: CSS Gallery (Lightbox)</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="gallery"></div>
+  <header class="header">
+    <div class="container">
+      <h1>CSS Image Gallery — Click to Enlarge</h1>
+    </div>
+  </header>
+  <main class="container">
+    <section class="card">
+      <p>Click any thumbnail to open it in a CSS-only lightbox. Close with the “× Close” button.</p>
+      <div class="gallery">
+        <a href="#img1"><img class="thumb" src="https://picsum.photos/id/1015/800/600" alt="Mountain lake" /></a>
+        <a href="#img2"><img class="thumb" src="https://picsum.photos/id/1025/800/600" alt="Running dog" /></a>
+        <a href="#img3"><img class="thumb" src="https://picsum.photos/id/1005/800/600" alt="Forest river" /></a>
+        <a href="#img4"><img class="thumb" src="https://picsum.photos/id/1035/800/600" alt="Desert dunes" /></a>
+        <a href="#img5"><img class="thumb" src="https://picsum.photos/id/1043/800/600" alt="Sea cliffs" /></a>
+        <a href="#img6"><img class="thumb" src="https://picsum.photos/id/1056/800/600" alt="Snowy mountains" /></a>
+      </div>
+    </section>
+  </main>
+  <div id="img1" class="lightbox">
+    <a href="#gallery" class="close" aria-label="Close">× Close</a>
+    <img src="https://picsum.photos/id/1015/1400/900" alt="Mountain lake enlarged" />
+  </div>
+  <div id="img2" class="lightbox">
+    <a href="#gallery" class="close" aria-label="Close">× Close</a>
+    <img src="https://picsum.photos/id/1025/1400/900" alt="Running dog enlarged" />
+  </div>
+  <div id="img3" class="lightbox">
+    <a href="#gallery" class="close" aria-label="Close">× Close</a>
+    <img src="https://picsum.photos/id/1005/1400/900" alt="Forest river enlarged" />
+  </div>
+  <div id="img4" class="lightbox">
+    <a href="#gallery" class="close" aria-label="Close">× Close</a>
+    <img src="https://picsum.photos/id/1035/1400/900" alt="Desert dunes enlarged" />
+  </div>
+  <div id="img5" class="lightbox">
+    <a href="#gallery" class="close" aria-label="Close">× Close</a>
+    <img src="https://picsum.photos/id/1043/1400/900" alt="Sea cliffs enlarged" />
+  </div>
+  <div id="img6" class="lightbox">
+    <a href="#gallery" class="close" aria-label="Close">× Close</a>
+    <img src="https://picsum.photos/id/1056/1400/900" alt="Snowy mountains enlarged" />
+  </div>
+</body>
+</html>

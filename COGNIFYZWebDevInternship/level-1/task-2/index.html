@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Level 1 — Task 2 (JavaScript)</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav">
+      <a href="#button">Color Button</a>
+      <a href="#greeting">Greeting</a>
+      <a href="#calculator">Calculator</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section id="button" class="card">
+      <h1>Color-Changing Button</h1>
+      <p>Click the button; each click cycles to a new color.</p>
+      <button id="colorBtn" class="btn">Click me</button>
+    </section>
+
+    <section id="greeting" class="card">
+      <h2>Time-Based Greeting</h2>
+      <p>Press the button to see a greeting based on your current time.</p>
+      <button id="greetBtn" class="btn">Show Greeting</button>
+    </section>
+
+    <section id="calculator" class="card">
+      <h2>Basic Calculator — Add Two Numbers</h2>
+      <form id="calcForm" class="calc" onsubmit="return false;">
+        <div class="row">
+          <label for="numA">First number</label>
+          <input id="numA" type="number" placeholder="e.g., 12.5" required />
+        </div>
+        <div class="row">
+          <label for="numB">Second number</label>
+          <input id="numB" type="number" placeholder="e.g., 7.5" required />
+        </div>
+        <div class="actions">
+          <button id="sumBtn" class="btn" type="button">Add</button>
+          <button id="clearBtn" class="btn btn-ghost" type="button">Clear</button>
+        </div>
+        <output id="result" class="out" aria-live="polite">Result will appear here</output>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    &copy; 2025 | Level 1 - Task 2
+  </footer>
+</body>
+</html>
